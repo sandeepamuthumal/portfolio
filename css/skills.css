@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #fff;
+    max-height: 100vh;
+    font-weight: 400;
+}
+
+.navbar {
+    padding: 1rem 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    color: #fff;
+    position: sticky;
+}
+
+.navlinks ul {
+    display: flex;
+    gap: 15px;
+    text-align: center;
+}
+
+.navlinks li {
+    list-style-type: none;
+}
+
+.navlinks a {
+    text-decoration: none;
+    padding: 5px;
+    color: #fff;
+}
+
+.navlinks a:hover {
+    color: #d6b335;
+}
+
+.hero {
+    max-height: 92vh;
+    position: relative;
+    animation: fadeInPage 1s ease-in-out;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInPage {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.nav-button a {
+    color: #d6b335;
+}
+
+.page-title {
+    text-align: center;
+    padding: 15px;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-title .line {
+    text-align: center;
+    width: 20rem;
+    padding: 3px;
+    margin-top: 2px;
+    border-radius: 35%;
+    background: linear-gradient(to right, #f9f9f9, #d6b335, #f9f9f9);
+}
+
+.main {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.row-1 {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto auto auto;
+    column-gap: 40px;
+}
+
+.row-2 {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto auto;
+    column-gap: 40px;
+}
+
+.row-3 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    column-gap: 40px;
+}
+
+.card {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    color: #000;
+    background: linear-gradient(to right, #f0f0f0 0%, #f5f5f5 100%);
+    border-radius: 10px;
+    box-shadow: 0 0px 5px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    margin-bottom: 2rem;
+    line-height: 1.5;
+    width: 180px;
+    height: 150px;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+    background-color: #d6b335;
+}
